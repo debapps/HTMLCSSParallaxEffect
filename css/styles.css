@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: wheat;
+    height: 100%;
+}
+
+.full-height {
+    /* Full height */
+    height: 100%;
+}
+
+.half-height {
+    /* Half height */
+    height: 50%;
+}
+
+.cover-img-back {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sunrise-background {
+    /* Set the background image. */
+    background-image: url("../images/sunrise.jpg");   
+}
+
+.forest-background {
+    /* Set the background image. */
+    background-image: url("../images/forrestroad.jpg");
+}
+
+.seashore-background {
+    /* Set the background image. */
+    background-image: url("../images/seashore.jpg");
+}
+
+.parallax-effect {
+    background-attachment: fixed;
+}
+
+.heading-text {
+    position: relative;
+    top: 40%;
+
+    /* Text style */
+    text-align: center;
+    font-family: cursive;
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: whitesmoke;  
+    text-shadow: 2px 2px 5px red;
+}
+
+.content-text {
+    position: relative;
+    top: 40%;
+
+     /* Text style */
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+    font-size: 2rem;
+    color: gold;
+
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding: .5rem;
+    box-shadow: 5px 5px 3px orangered;
+    background-color: darkred;
+
+}
+
+footer {
+    background-color:darkred;
+    /* Text style */
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 1rem;
+    color: gold;
+    text-align: center;
+    padding: 20px;
+}

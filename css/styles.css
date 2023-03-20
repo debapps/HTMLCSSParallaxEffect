@@ -1,11 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Righteous&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body, html {
-    background-color: wheat;
+:root {
+    --dark-blue: rgb(3, 3, 29);
+    --indigo: rgb(62, 62, 179);
+    --dark-red: rgb(81, 1, 1);
+}
+
+body,
+html {
     height: 100%;
 }
 
@@ -25,9 +33,25 @@ body, html {
     background-size: cover;
 }
 
+.font-heading {
+    font-family: 'Righteous', cursive;
+    /* Text style */
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px var(--indigo);
+}
+
+.font-text {
+    font-family: 'Poppins', sans-serif;
+}
+
+.font-footer {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .sunrise-background {
     /* Set the background image. */
-    background-image: url("../images/sunrise.jpg");   
+    background-image: url("../images/sunrise.jpg");
 }
 
 .forest-background {
@@ -44,47 +68,55 @@ body, html {
     background-attachment: fixed;
 }
 
-.heading-text {
+.hero-text {
     position: relative;
-    top: 40%;
+    top: 20%;
 
     /* Text style */
     text-align: center;
-    font-family: cursive;
     font-weight: 700;
     font-size: 2.5rem;
-    color: whitesmoke;  
-    text-shadow: 2px 2px 5px red;
+    color: var(--dark-blue);
+
+    display: block;
+    width: fit-content;
+    margin: auto;
+    padding: .5rem;
+    box-shadow: 5px 5px 3px var(--indigo);
+    background-color: gold;
 }
 
 .content-text {
     position: relative;
     top: 40%;
 
-     /* Text style */
+    /* Text style */
     text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: gold;
 
     display: block;
     width: fit-content;
     margin: auto;
     padding: .5rem;
-    box-shadow: 5px 5px 3px orangered;
-    background-color: darkred;
-
+    box-shadow: 5px 5px 3px var(--indigo);
+    background-color: var(--dark-blue);
 }
 
+header,
 footer {
-    background-color:darkred;
+    background-color: var(--dark-red);
     /* Text style */
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
     font-weight: 400;
     font-size: 1rem;
     color: gold;
     text-align: center;
     padding: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: gold;
 }
